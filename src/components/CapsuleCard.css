@@ -1,0 +1,375 @@
+/* =========================================================
+   CAPSULE CARD
+========================================================= */
+
+.capsule-card {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 25px 27px;
+
+  background: #fffaf2;
+
+  border: 1px solid #ded2c2;
+
+  border-radius: 16px;
+
+  color: #29251f;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.capsule-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #d2c3b0;
+
+  box-shadow:
+    0 10px 28px rgba(60, 45, 25, 0.07);
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.capsule-card-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.capsule-tags {
+  min-width: 0;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  gap: 7px;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+}
+
+.capsule-tag {
+  flex-shrink: 0;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #e9dece;
+
+  color: #665847;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   BOOKMARK
+========================================================= */
+
+.bookmark-btn {
+  flex-shrink: 0;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #756b5d;
+
+  font-size: 21px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    color 0.15s ease;
+}
+
+.bookmark-btn:hover {
+  transform: scale(1.12);
+}
+
+.bookmark-btn.bookmarked {
+  color: #806344;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.capsule-title {
+  margin: 21px 0 9px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 22px;
+
+  line-height: 1.3;
+
+  font-weight: normal;
+
+  color: #29251f;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.capsule-image {
+  width: 100%;
+
+  max-height: 300px;
+
+  margin: 18px 0;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+}
+
+.capsule-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.capsule-message {
+  margin: 17px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 17px;
+
+  line-height: 1.65;
+
+  color: #4b443a;
+
+  text-align: left;
+
+  white-space: pre-wrap;
+}
+
+
+/* =========================================================
+   AUDIO
+========================================================= */
+
+.capsule-audio {
+  margin-top: 18px;
+
+  padding: 12px 15px;
+
+  border-radius: 10px;
+
+  background: #eee6d9;
+
+  color: #5d554b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.capsule-card-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 22px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #e2d8ca;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  color: #918679;
+}
+
+
+/* =========================================================
+   LIKE
+========================================================= */
+
+.like-btn {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 4px 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #918679;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.heart {
+  font-size: 20px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.15s ease,
+    color 0.15s ease;
+}
+
+.like-btn:hover .heart {
+  transform: scale(1.12);
+}
+
+.like-btn.liked {
+  color: #b54848;
+}
+
+.like-btn.liked .heart {
+  color: #c44747;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.capsule-date {
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+.app.dark .capsule-card {
+  background: #24211d;
+
+  border-color: #3d3831;
+
+  color: #eee6d8;
+}
+
+.app.dark .capsule-card:hover {
+  border-color: #514a40;
+
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.app.dark .capsule-tag {
+  background: #393329;
+
+  color: #d8c9b2;
+}
+
+.app.dark .bookmark-btn {
+  color: #aaa196;
+}
+
+.app.dark .bookmark-btn.bookmarked {
+  color: #c5a879;
+}
+
+.app.dark .capsule-title {
+  color: #f4eee3;
+}
+
+.app.dark .capsule-message {
+  color: #d8d0c5;
+}
+
+.app.dark .capsule-audio {
+  background: #1d1b18;
+
+  color: #bcb3a7;
+}
+
+.app.dark .capsule-card-footer {
+  border-top-color: #3d3831;
+
+  color: #81786d;
+}
+
+.app.dark .like-btn {
+  color: #81786d;
+}
+
+.app.dark .like-btn.liked {
+  color: #d35b5b;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .capsule-card {
+    padding: 21px 19px;
+  }
+
+  .capsule-title {
+    font-size: 20px;
+  }
+
+  .capsule-message {
+    font-size: 16px;
+  }
+
+}

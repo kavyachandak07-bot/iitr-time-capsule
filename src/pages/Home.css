@@ -1,0 +1,193 @@
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-page {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 60px 45px 100px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.home-header {
+  margin-bottom: 40px;
+}
+
+.home-eyebrow {
+  margin: 0 0 15px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  color: #92764f;
+}
+
+.home-header h1 {
+  margin: 0;
+
+  font-size: 50px;
+
+  line-height: 1.05;
+
+  font-weight: normal;
+
+  color: #29251f;
+}
+
+.home-header h1 span {
+  color: #92744a;
+
+  font-style: italic;
+}
+
+.home-subtitle {
+  margin: 20px 0 0;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  color: #746a5d;
+}
+
+
+/* =========================================================
+   INTEREST BAR
+========================================================= */
+
+.interest-bar {
+  display: flex;
+
+  gap: 8px;
+
+  margin-bottom: 28px;
+
+  overflow-x: auto;
+
+  padding-bottom: 5px;
+
+  scrollbar-width: none;
+}
+
+.interest-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.interest-tag {
+  flex-shrink: 0;
+
+  padding: 8px 15px;
+
+  border: 1px solid #d8ccbc;
+
+  border-radius: 30px;
+
+  background: transparent;
+
+  color: #5d554b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.interest-tag:hover {
+  background: #e9dfd0;
+}
+
+.interest-tag.active {
+  background: #29251f;
+
+  border-color: #29251f;
+
+  color: #f8f1e5;
+}
+
+.more-tag {
+  font-size: 16px;
+
+  padding: 5px 14px;
+}
+
+
+/* =========================================================
+   CAPSULE FEED
+========================================================= */
+
+.capsule-feed {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+.app.dark .home-header h1 {
+  color: #f4eee3;
+}
+
+.app.dark .home-header h1 span {
+  color: #c4a477;
+}
+
+.app.dark .home-subtitle {
+  color: #aaa095;
+}
+
+.app.dark .interest-tag {
+  border-color: #4a443c;
+
+  color: #c9c0b3;
+}
+
+.app.dark .interest-tag:hover {
+  background: #302c27;
+}
+
+.app.dark .interest-tag.active {
+  background: #e8dfd2;
+
+  border-color: #e8dfd2;
+
+  color: #29251f;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .home-page {
+    padding: 40px 22px 80px;
+  }
+
+  .home-header h1 {
+    font-size: 38px;
+  }
+
+  .home-subtitle {
+    font-size: 14px;
+  }
+}
